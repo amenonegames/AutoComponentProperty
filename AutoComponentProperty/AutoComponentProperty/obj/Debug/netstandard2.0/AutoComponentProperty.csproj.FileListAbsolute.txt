@@ -1,0 +1,10 @@
+C:\Users\tamed\Documents\project\AutoComponentProperty\AutoComponentProperty\AutoComponentProperty\bin\Debug\netstandard2.0\AutoComponentProperty.deps.json
+C:\Users\tamed\Documents\project\AutoComponentProperty\AutoComponentProperty\AutoComponentProperty\bin\Debug\netstandard2.0\AutoComponentProperty.dll
+C:\Users\tamed\Documents\project\AutoComponentProperty\AutoComponentProperty\AutoComponentProperty\bin\Debug\netstandard2.0\AutoComponentProperty.pdb
+C:\Users\tamed\Documents\project\AutoComponentProperty\AutoComponentProperty\AutoComponentProperty\obj\Debug\netstandard2.0\AutoComponentProperty.csproj.AssemblyReference.cache
+C:\Users\tamed\Documents\project\AutoComponentProperty\AutoComponentProperty\AutoComponentProperty\obj\Debug\netstandard2.0\AutoComponentProperty.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tamed\Documents\project\AutoComponentProperty\AutoComponentProperty\AutoComponentProperty\obj\Debug\netstandard2.0\AutoComponentProperty.AssemblyInfoInputs.cache
+C:\Users\tamed\Documents\project\AutoComponentProperty\AutoComponentProperty\AutoComponentProperty\obj\Debug\netstandard2.0\AutoComponentProperty.AssemblyInfo.cs
+C:\Users\tamed\Documents\project\AutoComponentProperty\AutoComponentProperty\AutoComponentProperty\obj\Debug\netstandard2.0\AutoComponentProperty.csproj.CoreCompileInputs.cache
+C:\Users\tamed\Documents\project\AutoComponentProperty\AutoComponentProperty\AutoComponentProperty\obj\Debug\netstandard2.0\AutoComponentProperty.dll
+C:\Users\tamed\Documents\project\AutoComponentProperty\AutoComponentProperty\AutoComponentProperty\obj\Debug\netstandard2.0\AutoComponentProperty.pdb
