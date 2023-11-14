@@ -27,7 +27,7 @@ namespace AutoComponentProperty
 {
     [AttributeUsage(AttributeTargets.Field,
                     Inherited = false, AllowMultiple = false)]
-    sealed class CompoPropAttribute : Attribute
+        sealed class CompoPropAttribute : Attribute
     {
     
         public GetFrom from { get; set; }
@@ -73,21 +73,17 @@ namespace AutoComponentProperty
                 {
                     var fieldSymbol = model.GetDeclaredSymbol(variable) as IFieldSymbol;
                     //フィールド属性からAutoProperty属性があるかを確認
-                    var attribute  = fieldSymbol.GetAttributes()
-                        .FirstOrDefault(attr => attr.AttributeClass.Name == "CompoPropAttribute");
+
+                    var arg = field.attr.ArgumentList.Arguments[0];
+                    var expr = arg.Expression;
+                    var parsed = Enum.ToObject(typeof(GetFrom), model.GetConstantValue(expr).Value);
                     
-                    if (attribute != null)
-                    {
-                        var arg = field.attr.ArgumentList.Arguments[0];
-                        var expr = arg.Expression;
-                        var parsed = Enum.ToObject(typeof(GetFrom), model.GetConstantValue(expr).Value);
-                        
-                        // 'Type' プロパティの値を取得
-                        //int from = attribute.ConstructorArguments[0].Value is short ? (short)attribute.ConstructorArguments[0].Value : 0;
-                        ITypeSymbol sourceType = fieldSymbol.Type;
-                        
-                        fieldSymbols.Add((fieldSymbol,sourceType, (GetFrom)parsed));
-                    }
+                    // 'Type' プロパティの値を取得
+                    //int from = attribute.ConstructorArguments[0].Value is short ? (short)attribute.ConstructorArguments[0].Value : 0;
+                    ITypeSymbol sourceType = fieldSymbol.Type;
+                    
+                    fieldSymbols.Add((fieldSymbol,sourceType, (GetFrom)parsed));
+                    
                 }
             }
             
@@ -129,7 +125,7 @@ namespace AutoComponentProperty
                 }
 
                 builder.Append($@"
-    public {className} {propertyName} => {field.Name} is null 
+    private {className} {propertyName} => {field.Name} is null 
                 ? ({field.Name} = ");
                     
                 if(from == GetFrom.This && !isArray)
