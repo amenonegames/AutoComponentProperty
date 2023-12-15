@@ -1,7 +1,7 @@
 # AutoComponentProperty
 
 This is source generator project.
-Please use Dll.
+Please use Dll in Release page.
 
 If you writen following code,
 
