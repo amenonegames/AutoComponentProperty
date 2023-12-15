@@ -3,6 +3,8 @@
 This is source generator project.
 Please use Dll.
 
+If you writen following code,
+
 ```csharp
     public partial class TestClass : MonoBehaviour
     {
@@ -12,7 +14,7 @@ Please use Dll.
     }
 ```
 
-Auto generate this
+Then, This code is automatically generated
 
 ```csharp
 public partial class TestClass
@@ -30,5 +32,5 @@ public partial class TestClass
 }
 ```
 
-Then you can access ```MyRigidbody``` property in the code.
+you can access ```MyRigidbody``` property in the code.
 If original variable is array, the code generated change GetComponent methods to GetComponents methods.
