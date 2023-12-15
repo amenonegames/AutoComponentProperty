@@ -1,5 +1,8 @@
 # AutoComponentProperty
 
+This is source generator project.
+Please use Dll.
+
 ```csharp
     public partial class TestClass : MonoBehaviour
     {
